@@ -1,41 +1,118 @@
 <!doctype html>
 <html lang="en">
-  <head>
-   
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
- 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Bootstrap</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            <img src="https://www.rawshorts.com/freeicons/wp-content/uploads/2017/01/blue_repicthousebase_1484336386-1.png" alt="" width="30" height="24" >
-          Homepage
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="css/boot.css" rel="stylesheet">
+
+  <title>Bootstrap</title>
+</head>
+
+<body>
+
+  <div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><i class="fas fa-home"> Homepage</i>
         </a>
-        <a class="nav-link" href="https://www.facebook.com/">
-            <img src="https://brandlogos.net/wp-content/uploads/2021/04/facebook-icon-512x512.png" alt="" width="30" height="24" >
-            Facebook
-        </a>
-        <a class="nav-link" href="https://www.youtube.com/">
-            Youtube
-            <img src="https://i.pinimg.com/474x/d4/48/2b/d4482ba4e7ebdbff7b8ba73e7d39aceb.jpg" alt="" width="30" height="24" >
-        </a>
-        <a class="nav-link" href="https://www.youtube.com/">
-            Twitter
-            <img src="https://cdn.icon-icons.com/icons2/729/PNG/512/twitter_icon-icons.com_62751.png" alt="" width="30" height="24" >
-        </a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-gamepad"></i>
+
+              </a>
+            </li>
+            <li class="dropdown">
+              <button type="button" class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown">
+                Social Network
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="https://www.facebook.com/"><i class="fab fa-facebook-square">
+                      Facebook</i></a></li>
+                <li><a class="dropdown-item" href="https://www.youtube.com/"><i class="fab fa-instagram-square">
+                      Instagram</i></a></li>
+                <li><a class="dropdown-item" href="https://twitter.com/"><i class="fab fa-twitter">
+                      Twitter</i></a></li>
+              </ul>
         </div>
-      </nav>
+        </li>
 
-      <div class="d-flex justify-content-center"><iframe src="https://calendar.google.com/calendar/embed?src=tvhuy234%40gmail.com&ctz=Asia%2FHo_Chi_Minh" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe></div>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+  </div>
 
-      <footer class="bg-dark text-center text-white fixed-bottom">
-        © 2021 Da Nang
-      </footer>
-  </body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+
+
+
+        <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white">
+          <div class="position-sticky">
+            <div class="list-group list-group-flush mx-3 mt-4">
+              <a href="#" class="list-group-item list-group-item-action py-2 ripple" aria-current="true">
+                <i class="fas fa-tachometer-alt fa-fw me-3"></i><span>Main dashboard</span>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action py-2 ripple active">
+                <i class="fas fa-chart-area fa-fw me-3"></i><span>Webiste traffic</span>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i
+                  class="fas fa-lock fa-fw me-3"></i><span>Password</span></a>
+              <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i
+                  class="fas fa-chart-line fa-fw me-3"></i><span>Analytics</span></a>
+              </a>
+              <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i
+                  class="fas fa-chart-bar fa-fw me-3"></i><span>Orders</span></a>
+              <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i
+                  class="fas fa-globe fa-fw me-3"></i><span>International</span></a>
+
+              <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i
+                  class="fas fa-calendar fa-fw me-3"></i><span>Calendar</span></a>
+              <a href="#" class="list-group-item list-group-item-action py-2 ripple"><i
+                  class="fas fa-users fa-fw me-3"></i><span>Users</span></a>
+
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="col-8">
+
+        <div class="w-100 d-inline-block" style="background-color: rgba(0,0,255,.1)">
+          <div><iframe src="https://calendar.google.com/calendar/embed?src=tvhuy234%40gmail.com&ctz=Asia%2FHo_Chi_Minh"
+              width="600" height="400" frameborder="0" scrolling="no"></iframe></div>
+        </div>
+
+      </div>
+    </div>
+    <div class="col">
+      <div class="w-100 d-inline-block" style="background-color: rgba(0,0,255,.1)">
+
+        QC
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+
+  <footer class="bg-dark text-center text-white fixed-bottom">
+    © 2021 Da Nang
+  </footer>
+
+
+</body>
+
 </html>
